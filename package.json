@@ -1,0 +1,43 @@
+{
+  "name": "selenium-reverse-proxy",
+  "version": "0.0.1",
+  "description": "Node.js reverse proxy which allows inserting an authorization header into requests sent to a Selenium server or grid.",
+  "main": "selenium-proxy.js",
+  "bin": {
+    "selenium-proxy": "./selenium-proxy.js"
+  },
+  "scripts": {
+    "test": "npx mocha test/**/*.test.js",
+    "build": "sh build.sh",
+    "test:build": "npm run build && cp -r test build/ && cd build && npm test && rm -rf test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jamesmortensen/selenium-reverse-proxy.git"
+  },
+  "keywords": [
+    "selenium",
+    "grid",
+    "selenium-grid",
+    "server",
+    "proxy",
+    "reverse-proxy",
+    "authentication",
+    "webdriver"
+  ],
+  "author": "James Mortensen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jamesmortensen/selenium-reverse-proxy/issues"
+  },
+  "homepage": "https://github.com/jamesmortensen/selenium-reverse-proxy#readme",
+  "dependencies": {
+    "argumently": "^0.0.1",
+    "axios": "^0.27.2"
+  },
+  "devDependencies": {
+    "chai": "^4.3.6",
+    "mocha": "^10.0.0",
+    "uglify-js": "^3.16.3"
+  }
+}

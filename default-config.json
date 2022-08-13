@@ -1,0 +1,14 @@
+{
+    "localhost": {
+        "protocol": "http",
+        "hostname": "localhost",
+        "port": 4444,
+        "path": ""
+    },
+    "grid": {
+        "protocol": "https",
+        "hostname": "grid.example.com",
+        "port": 443,
+        "path": "/wd/hub"
+    }
+}
