@@ -1,19 +1,19 @@
-# Selenium Reverse Proxy
+# Selenium Proxy
 
-Node.js reverse proxy which allows inserting an authorization header into requests sent to a Selenium server or grid.
+Node.js proxy which allows inserting an authorization header into requests sent to a Selenium server or grid.
 
 ## Installation
 
 Installing the CLI tool globally:
 
 ```bash
-$ npm i selenium-reverse-proxy -g
+$ npm i selenium-proxy -g
 ```
 
 Alternatively, you may want to install the CLI tool within an existing Node.js project:
 
 ```bash
-$ npm install selenium-reverse-proxy
+$ npm install selenium-proxy
 ```
 
 ## Configuration
@@ -97,7 +97,7 @@ Or use command line arguments:
 $ selenium-proxy --proxy-port 8100 --proxy-profile grid --proxy-config config.json
 ```
 
-Since the main use case of the reverse proxy server is to allow testing frameworks, such as Selenium, to access a Selenium grid secured with an authorization token, we will need to configure the server to add the authorization header to all requests to the Selenium server or grid:
+Since the main use case of the proxy server is to allow testing frameworks, such as Selenium, to access a Selenium grid secured with an authorization token, we will need to configure the server to add the authorization header to all requests to the Selenium server or grid:
 
 ```bash
 $ SELENIUM_PROXY_ACCESS_TOKEN=<YOUR_TOKEN_HERE> SELENIUM_PROXY_PROFILE=grid selenium-proxy
