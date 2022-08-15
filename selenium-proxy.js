@@ -8,6 +8,11 @@ if (args.hasHelp()) {
     process.exit(0);
 }
 
+if(args.has('--version') || args.has('-v')) {
+    console.log(`v${require('./package.json').version}`);
+    process.exit(0);
+}
+
 if (args.has('--proxy-port')) {
     process.env.SELENIUM_PROXY_PORT = args.get('--proxy-port');
 }
