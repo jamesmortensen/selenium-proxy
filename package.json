@@ -1,6 +1,6 @@
 {
   "name": "selenium-proxy",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Node.js proxy which allows inserting an authorization header into requests sent to a Selenium server or grid.",
   "main": "selenium-proxy.js",
   "bin": {
@@ -31,7 +31,7 @@
   },
   "homepage": "https://github.com/jamesmortensen/selenium-proxy#readme",
   "dependencies": {
-    "argumently": "^0.0.1",
+    "argumently": "^0.0.2",
     "axios": "^0.27.2"
   },
   "devDependencies": {
