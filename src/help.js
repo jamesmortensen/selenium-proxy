@@ -14,6 +14,8 @@ Usage:
 
     --proxy-config     Path to a config file referenced from working directory.
 
+    --generate-config  Generate a proxy-config file, if one doesn't already exist.
+
     -h | --help        Help (this output)
 
     -v | --version     Output version information
